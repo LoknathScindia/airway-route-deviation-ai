@@ -1,6 +1,52 @@
 # Python
 __pycache__/
 *.py[cod]
+*$py.class
+# Virtual env
+venv/
+.venv/
+env/
+ENV/
+env.bak/
+venv.bak/
+# Distribution / packaging
+build/
+dist/
+*.egg-info/
+pip-wheel-metadata/
+# Installer logs
+pip-log.txt
+pip-delete-this-directory.txt
+# Unit test / coverage
+.pytest_cache/
+coverage.xml
+htmlcov/
+.mypy_cache/
+# Jupyter
+.ipynb_checkpoints
+# VSCode
+.vscode/
+# IDEs
+.idea/
+# System
+.DS_Store
+# Data and models (large files)
+data/
+models/
+notebooks/
+# Node
+node_modules/
+# Eclipse/other
+.p2/
+# Local env files
+.env
+env.py
+# Logs
+*.log
+# SQLite DBs
+*.sqlite3# Python
+__pycache__/
+*.py[cod]
 *.pyo
 
 # Virtual Environment
