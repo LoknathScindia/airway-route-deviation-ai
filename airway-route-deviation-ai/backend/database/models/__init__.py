@@ -10,6 +10,9 @@ class Prediction(Base):
 
     id = Column(Integer, primary_key=True, index=True)
 
+    departure_airport = Column(String, nullable=False)
+    destination_airport = Column(String, nullable=False)
+
     longitude = Column(Float, nullable=False)
     latitude = Column(Float, nullable=False)
     velocity = Column(Float, nullable=False)
@@ -22,4 +25,10 @@ class Prediction(Base):
     confidence = Column(Float, nullable=False)
     status = Column(String, nullable=False)
 
+    review_status = Column(String, default="Pending")
+    notes = Column(String, nullable=True)
+
     created_at = Column(DateTime, default=datetime.utcnow)
+
+
+from backend.database.models.user import User

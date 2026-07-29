@@ -1,1 +1,6 @@
-from .prediction import PredictionRequest, PredictionResponse
+from .prediction import (
+    PredictionRequest,
+    PredictionResponse,
+    PredictionUpdateRequest,
+    PredictionRecordResponse,
+)
